@@ -1,6 +1,6 @@
-# Ugly UI
+# Crimson Quirks UI
 
-An ugly and boring React component library.
+A UI component library utilizing Vite and Storybook to be used in my personal projects.
 
 ## Reference
 

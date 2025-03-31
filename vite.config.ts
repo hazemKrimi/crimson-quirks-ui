@@ -17,8 +17,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'ugly-ui',
-      fileName: (format) => `ugly-ui.${format}.js`,
+      name: 'crimson-quirks-ui',
+      fileName: (format) => `crimson-quirks-ui.${format}.js`,
       formats: ['es', 'cjs', 'umd'],
     },
     rollupOptions: {
