@@ -3,7 +3,7 @@ import { Wrapper } from './styles';
 
 import Text from '../Text';
 
-type MenuProps = {
+export type MenuProps = {
   className?: string;
   items: Array<{
     icon?: React.ReactNode;

@@ -2,7 +2,7 @@ import { Wrapper } from './styles';
 
 import Text from '../Text';
 
-type SelectProps = {
+export type SelectProps = {
   className?: string;
   color?:
     | 'client'

@@ -1,6 +1,6 @@
 import { Wrapper } from './styles';
 
-type AvatarProps = {
+export type AvatarProps = {
   className?: string;
   color?: 'client' | 'productOwner' | 'developer' | 'admin' | string;
   size?: 'small' | 'big';

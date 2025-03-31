@@ -1,6 +1,6 @@
 import { Wrapper } from './styles';
 
-type AlertProps = {
+export type AlertProps = {
   className?: string;
   color:
     | 'client'

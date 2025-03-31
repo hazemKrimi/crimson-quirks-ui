@@ -3,7 +3,7 @@ import Text from '../Text';
 import { Upload } from '../../assets';
 import { Wrapper } from './styles';
 
-type InputProps = {
+export type InputProps = {
   className?: string;
   color?:
     | 'client'

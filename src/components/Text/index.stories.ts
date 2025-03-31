@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
+  tags: ['!autodocs'],
   argTypes: {
     color: { options: ['client', 'productOwner', 'developer', 'admin', 'error'] },
     variant: { options: ['display', 'headline', 'title', 'subheader', 'body', 'caption'] },

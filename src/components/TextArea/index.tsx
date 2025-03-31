@@ -2,7 +2,7 @@ import { Wrapper } from './styles';
 
 import Text from '../Text';
 
-type TextAreaProps = {
+export type TextAreaProps = {
   className?: string;
   color?:
     | 'client'

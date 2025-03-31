@@ -4,7 +4,7 @@ import Text from '../Text';
 
 import { Check } from '../../assets';
 
-type CheckBoxProps = {
+export type CheckBoxProps = {
   className?: string;
   color?: 'client' | 'productOwner' | 'developer' | 'admin';
   label: string;

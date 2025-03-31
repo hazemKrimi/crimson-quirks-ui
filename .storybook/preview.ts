@@ -3,7 +3,7 @@ import type { Preview } from '@storybook/react'
 import { ThemeProvider } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
-import { theme } from '../src/themes';
+import { defaultTheme } from '../src/themes';
 
 import GlobalStyles from '../src/components/GlobalStyles';
 
@@ -16,15 +16,14 @@ const preview: Preview = {
       },
     },
   },
-
   decorators: [withThemeFromJSXProvider({
     themes: {
-      theme,
+      theme: defaultTheme,
     },
     defaultTheme: 'theme',
     Provider: ThemeProvider,
     GlobalStyles,
-  })]
+  })],
 };
 
 export default preview;

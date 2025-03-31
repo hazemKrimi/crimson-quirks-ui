@@ -1,7 +1,7 @@
 import { Wrapper } from './styles';
 import { Upload, Close } from '../../assets';
 
-type ImagePreviewProps = {
+export type ImagePreviewProps = {
   className?: string;
   color?:
     | 'client'

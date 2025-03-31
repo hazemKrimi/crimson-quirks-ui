@@ -1,7 +1,7 @@
 import { JSX } from 'react';
 import { Wrapper } from './styles';
 
-type LinkProps = {
+export type LinkProps = {
   href?: string;
   url?: boolean;
   children?: React.ReactNode | JSX.Element | string;

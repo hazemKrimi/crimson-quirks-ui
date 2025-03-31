@@ -4,7 +4,7 @@ import { Wrapper } from './styles';
 
 import Text from '../Text';
 
-type ContextMenuProps = {
+export type ContextMenuProps = {
   className?: string;
   items: Array<{ label: string; action?: () => void }>;
   component: string;

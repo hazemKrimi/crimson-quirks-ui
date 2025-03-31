@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import { theme } from '../../themes';
+import { defaultTheme } from '../../themes';
 
 import Box from '../Box';
 import Button from '../Button';
@@ -7,7 +7,7 @@ import Text from '../Text';
 
 import { Wrapper } from './styles';
 
-type ModalProps = {
+export type ModalProps = {
   color: 'client' | 'productOwner' | 'developer' | 'admin';
   title: string;
   description: string;
@@ -27,7 +27,7 @@ const Modal = ({
   return (
     <Wrapper>
       <Box
-        background={theme.colors.white.main}
+        background={defaultTheme.colors.white.main}
         borderRadius='10px'
         padding='20px'
         display='grid'
@@ -38,7 +38,7 @@ const Modal = ({
         <Text variant='headline' weight='bold' color={color}>
           {title}
         </Text>
-        <Text variant='body' color={theme.colors.black.main}>
+        <Text variant='body' color={defaultTheme.colors.black.main}>
           {description}
         </Text>
         {children}

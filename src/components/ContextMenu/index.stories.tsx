@@ -6,7 +6,9 @@ import Box from '../Box';
 const meta = {
 	title: 'ContextMenu',
   component: ContextMenu,
-	tags: ['autodocs'],
+	parameters: {
+    layout: 'centered',
+  },
 } satisfies Meta<typeof ContextMenu>;
 
 export default meta;
@@ -27,4 +29,4 @@ export const Example: Story = {
       </>
     )
   },
-}
+};

@@ -2,7 +2,7 @@ import Spinner from '../Spinner';
 
 import { Wrapper } from './styles';
 
-type ButtonProps = {
+export type ButtonProps = {
   color: 'client' | 'productOwner' | 'developer' | 'admin' | 'error';
   size?: 'small' | 'big';
   variant?: 'primary-action' | 'secondary-action' | 'outlined' | 'text';

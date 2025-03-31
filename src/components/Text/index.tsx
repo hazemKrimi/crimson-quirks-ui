@@ -1,6 +1,6 @@
 import { Wrapper } from './styles';
 
-type TextProps = {
+export type TextProps = {
   children?: string;
   className?: string;
   variant?: 'display' | 'headline' | 'title' | 'subheader' | 'body' | 'caption';

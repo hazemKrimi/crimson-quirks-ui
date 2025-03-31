@@ -1,9 +1,9 @@
 import Box from '../Box';
 import Text from '../Text';
 
-import { theme } from '../../themes';
+import { defaultTheme } from '../../themes';
 
-type CardProps = {
+export type CardProps = {
   title: string;
 	description: string;
   selectable?: boolean;
@@ -25,7 +25,7 @@ const Card = ({
       padding='10px'
       background='white'
       boxShadow='1px 1px 10px rgba(50, 59, 105, 0.25)'
-      border={selected ? `2px solid ${theme.colors[color].main}` : undefined}
+      border={selected ? `2px solid ${defaultTheme.colors[color].main}` : undefined}
       onClick={selectable ? toggleSelect : () => {}}
       display='grid'
       gridTemplateRows='auto'

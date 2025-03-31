@@ -9,12 +9,12 @@ type WrapperProps = {
     | 'white'
     | 'black'
     | 'gray';
-  fullScreen?: boolean;
+  fullWidth?: boolean;
 };
 
 export const Wrapper = styled.div<WrapperProps>`
-  ${({ fullScreen }) =>
-    fullScreen &&
+  ${({ fullWidth }) =>
+    fullWidth &&
     css`
       position: fixed;
       top: 50%;
@@ -28,6 +28,7 @@ export const Wrapper = styled.div<WrapperProps>`
     width: 80px;
     height: 80px;
   }
+
   .lds-dual-ring:after {
     content: ' ';
     display: block;
@@ -46,6 +47,7 @@ export const Wrapper = styled.div<WrapperProps>`
       transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
+
   @keyframes lds-dual-ring {
     0% {
       transform: rotate(0deg);

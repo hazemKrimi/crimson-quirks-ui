@@ -2,7 +2,7 @@ import { Wrapper } from './styles';
 
 import Text from '../Text';
 
-type ChipProps = {
+export type ChipProps = {
   variant?: 'outlined' | 'filled';
   color:
     | 'client'

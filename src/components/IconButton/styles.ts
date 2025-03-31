@@ -22,6 +22,7 @@ export const Wrapper = styled.button<WrapperProps>`
   svg {
     display: flex;
     align-items: center;
+		justify-content: center;
 
     path {
       stroke: ${({ theme }) => theme.colors.white.main};

@@ -2,7 +2,7 @@ import { Wrapper } from './styles';
 
 import SearchIcon from '../../assets/icons/search.svg?react';
 
-type SearchProps = {
+export type SearchProps = {
   className?: string;
   color?:
     | 'client'
