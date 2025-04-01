@@ -6,9 +6,8 @@
 	"module": "dist/crimson-quirks-ui.es.js",
   "default": "dist/crimson-quirks-ui.umd.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
+	"keywords": ["react", "styled-components", "storybook", "ui-library", "component-library"],
   "scripts": {
     "build": "vite build",
     "lint": "eslint src",
