@@ -11,7 +11,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['!autodocs'],
+  tags: ['autodocs'],
 } satisfies Meta<typeof Menu>;
 
 export default meta;

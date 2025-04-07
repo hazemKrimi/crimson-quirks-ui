@@ -6,6 +6,7 @@ import Box from '../Box';
 const meta = {
 	title: 'ContextMenu',
   component: ContextMenu,
+	tags: ['autodocs'],
 	parameters: {
     layout: 'centered',
   },

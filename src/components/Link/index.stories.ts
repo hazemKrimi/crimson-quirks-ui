@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['!autodocs'],
+  tags: ['autodocs'],
   argTypes: {
     color: { options: ['success', 'error', 'warning', 'black'] },
   },
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'success',
+		color: 'primary',
 		children: 'Link',
 		url: true,
 		href: 'https://hazemkrimi.tech',

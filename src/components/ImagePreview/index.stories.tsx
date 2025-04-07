@@ -6,6 +6,7 @@ import ImagePreview, {ImagePreviewProps} from '.';
 const meta = {
   title: 'ImagePreview',
   component: ImagePreview,
+	tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },

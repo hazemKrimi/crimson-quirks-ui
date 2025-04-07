@@ -8,6 +8,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+	tags: ['autodocs'],
   argTypes: {
     text: { control: 'text' },
     color: { options: ['primary', 'secondary', 'tertiary'] },
@@ -22,6 +23,7 @@ type Story = StoryObj<typeof meta>;
 export const Example: Story = {
   args: {
     text: 'A',
-		color: 'tertiary'
+		color: 'primary',
+		size: 'big'
   },
 };

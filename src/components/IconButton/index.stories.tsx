@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  tags: ['!autodocs'],
+  tags: ['autodocs'],
 } satisfies Meta<typeof IconButton>;
 
 export default meta;
@@ -20,9 +20,9 @@ export const Example: Story = {
   render: () => {
     return (
       <IconButton
-        color='secondary'
+        color='primary'
         icon={<Add />}
-        size='medium'
+        size='big'
         onClick={() => window.alert('Hello, World!')}
       />
     )
