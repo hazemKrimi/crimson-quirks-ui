@@ -5,10 +5,9 @@ import SearchIcon from '../../assets/icons/search.svg?react';
 export type SearchProps = {
   className?: string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -20,7 +19,7 @@ export type SearchProps = {
 };
 
 const Search = ({
-  color = 'client',
+  color = 'primary',
   value,
   onChange,
   ...props

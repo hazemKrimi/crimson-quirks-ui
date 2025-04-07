@@ -2,17 +2,16 @@ import { Wrapper } from './styles';
 
 export type SpinnerProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'white'
     | 'black'
     | 'gray';
   fullWidth?: boolean;
 };
 
-const Spinner = ({ fullWidth = false, color = 'client' }: SpinnerProps) => {
+const Spinner = ({ fullWidth = false, color = 'primary' }: SpinnerProps) => {
   return (
     <Wrapper fullWidth={fullWidth} color={color}>
       <div className='lds-dual-ring'></div>

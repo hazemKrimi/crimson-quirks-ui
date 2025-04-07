@@ -2,13 +2,12 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
-    | 'success'
-    | 'warning'
-    | 'error';
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'success'
+  | 'warning'
+  | 'error';
   variant: 'outlined' | 'filled';
 };
 

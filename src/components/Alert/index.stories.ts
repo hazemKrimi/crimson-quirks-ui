@@ -11,7 +11,7 @@ const meta = {
   tags: ['!autodocs'],
   argTypes: {
     text: { control: 'text' },
-    color: { options: ['client', 'productOwner', 'developer', 'admin'] },
+    color: { options: ['primary', 'secondary', 'tertiary'] },
   },
 } satisfies Meta<typeof Alert>;
 
@@ -22,6 +22,6 @@ type Story = StoryObj<typeof meta>;
 export const Example: Story = {
   args: {
     text: 'Alert',
-		color: 'client'
+		color: 'primary'
   },
 };

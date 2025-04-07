@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['!autodocs'],
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin'] },
+    color: { options: ['primary', 'secondary', 'tertiary'] },
     label: { control: 'text' },
   },
 } satisfies Meta<typeof CheckBox>;
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'admin',
+		color: 'primary',
 		label: 'Hello, World!',
 		checked: false,
 		onClick: () => window.alert('Clicked!'),

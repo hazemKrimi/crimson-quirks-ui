@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -64,28 +63,22 @@ export const Wrapper = styled.div<WrapperProps>`
 
   ${({ color, theme }) => {
     switch (color) {
-      case 'client':
+      case 'primary':
         return css`
           .textarea {
-            background: ${theme.colors.client.light};
+            background: ${theme.colors.primary.light};
           }
         `;
-      case 'productOwner':
+      case 'secondary':
         return css`
           .textarea {
-            background: ${theme.colors.productOwner.light};
+            background: ${theme.colors.secondary.light};
           }
         `;
-      case 'developer':
+      case 'tertiary':
         return css`
           .textarea {
-            background: ${theme.colors.developer.light};
-          }
-        `;
-      case 'admin':
-        return css`
-          .textarea {
-            background: ${theme.colors.admin.light};
+            background: ${theme.colors.tertiary.light};
           }
         `;
       case 'success':
@@ -121,7 +114,7 @@ export const Wrapper = styled.div<WrapperProps>`
       default:
         return css`
           .textarea {
-            background: ${theme.colors.client.light};
+            background: ${theme.colors.primary.light};
           }
         `;
     }

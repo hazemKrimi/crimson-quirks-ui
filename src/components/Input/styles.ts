@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -94,76 +93,58 @@ export const Wrapper = styled.div<WrapperProps>`
 
   ${({ color, theme }) => {
     switch (color) {
-      case 'client':
+      case 'primary':
         return css`
           .input {
-            background: ${theme.colors.client.light};
+            background: ${theme.colors.primary.light};
 
             &:focus-within {
-              background: ${theme.colors.client.main};
+              background: ${theme.colors.primary.main};
             }
           }
 
           input[type='file'] {
-            color: ${theme.colors.client.main};
+            color: ${theme.colors.primary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.client.main};
+            stroke: ${theme.colors.primary.main};
           }
         `;
-      case 'productOwner':
+      case 'secondary':
         return css`
           .input {
-            background: ${theme.colors.productOwner.light};
+            background: ${theme.colors.secondary.light};
 
             &:focus-within {
-              background: ${theme.colors.productOwner.main};
+              background: ${theme.colors.secondary.main};
             }
           }
 
           input[type='file'] {
-            color: ${theme.colors.productOwner.main};
+            color: ${theme.colors.secondary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.productOwner.main};
+            stroke: ${theme.colors.secondary.main};
           }
         `;
-      case 'developer':
+      case 'tertiary':
         return css`
           .input {
-            background: ${theme.colors.developer.light};
+            background: ${theme.colors.tertiary.light};
 
             &:focus-within {
-              background: ${theme.colors.developer.main};
+              background: ${theme.colors.tertiary.main};
             }
           }
 
           input[type='file'] {
-            color: ${theme.colors.developer.main};
+            color: ${theme.colors.tertiary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.developer.main};
-          }
-        `;
-      case 'admin':
-        return css`
-          .input {
-            background: ${theme.colors.admin.light};
-
-            &:focus-within {
-              background: ${theme.colors.admin.main};
-            }
-          }
-
-          input[type='file'] {
-            color: ${theme.colors.admin.main};
-          }
-
-          .icon svg path {
-            stroke: ${theme.colors.admin.main};
+            stroke: ${theme.colors.tertiary.main};
           }
         `;
       case 'success':
@@ -239,19 +220,19 @@ export const Wrapper = styled.div<WrapperProps>`
       default:
         return css`
           .input {
-            background: ${theme.colors.client.light};
+            background: ${theme.colors.primary.light};
 
             &:focus-within {
-              background: ${theme.colors.client.main};
+              background: ${theme.colors.primary.main};
             }
           }
 
           input[type='file'] {
-            color: ${theme.colors.client.main};
+            color: ${theme.colors.primary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.client.main};
+            stroke: ${theme.colors.primary.main};
           }
         `;
     }

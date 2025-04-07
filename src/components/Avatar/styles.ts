@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 type WrapperProps = {
-  color?: 'client' | 'productOwner' | 'developer' | 'admin' | string;
+  color?: 'primary' | 'secondary' | 'tertiary' | string;
   size?: 'small' | 'big';
 };
 

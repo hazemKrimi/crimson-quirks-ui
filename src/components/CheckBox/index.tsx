@@ -6,7 +6,7 @@ import { Check } from '../../assets';
 
 export type CheckBoxProps = {
   className?: string;
-  color?: 'client' | 'productOwner' | 'developer' | 'admin';
+  color?: 'primary' | 'secondary' | 'tertiary';
   label: string;
   checked: boolean;
   onClick: () => void;

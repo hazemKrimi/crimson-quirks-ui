@@ -60,80 +60,61 @@ export const defaultTheme: DefaultTheme = {
       )`,
       dark: '',
     },
-    client: {
-      main: '#5F6CAD',
+    primary: {
+      main: '#BD1839',
       light: `linear-gradient(
         rgba(255, 255, 255, .75),
         rgba(255, 255, 255, .75)
       ),
       linear-gradient(
-        #5F6CAD,
-        #5F6CAD
+        #BD1839,
+        #BD1839
       )`,
       dark: `linear-gradient(
         rgba(0, 0, 0, .3),
         rgba(0, 0, 0, .3)
       ),
       linear-gradient(
-        #5F6CAD,
-        #5F6CAD
+        #BD1839,
+        #BD1839
       )`,
     },
-    productOwner: {
-      main: '#20063B',
+    secondary: {
+      main: '#131314',
       light: `linear-gradient(
         rgba(255, 255, 255, .75),
         rgba(255, 255, 255, .75)
       ),
       linear-gradient(
-        #20063B,
-        #20063B
+        #131314,
+        #131314
       )`,
       dark: `linear-gradient(
         rgba(0, 0, 0, .3),
         rgba(0, 0, 0, .3)
       ),
       linear-gradient(
-        #20063B,
-        #20063B
+        #131314,
+        #131314
       )`,
     },
-    developer: {
-      main: '#ED7D3A',
+    tertiary: {
+      main: '#E7E7E7',
       light: `linear-gradient(
         rgba(255, 255, 255, .75),
         rgba(255, 255, 255, .75)
       ),
       linear-gradient(
-        #ED7D3A,
-        #ED7D3A
+        #E7E7E7,
+        #E7E7E7
       )`,
       dark: `linear-gradient(
         rgba(0, 0, 0, .3),
         rgba(0, 0, 0, .3)
       ),
       linear-gradient(
-        #ED7D3A,
-        #ED7D3A
-      )`,
-    },
-    admin: {
-      main: '#A30015',
-      light: `linear-gradient(
-        rgba(255, 255, 255, .75),
-        rgba(255, 255, 255, .75)
-      ),
-      linear-gradient(
-        #A30015,
-        #A30015
-      )`,
-      dark: `linear-gradient(
-        rgba(0, 0, 0, .3),
-        rgba(0, 0, 0, .3)
-      ),
-      linear-gradient(
-        #A30015,
-        #A30015
+        #E7E7E7,
+        #E7E7E7
       )`,
     },
   },

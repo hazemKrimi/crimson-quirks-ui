@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -45,68 +44,52 @@ export const Wrapper = styled.div<WrapperProps>`
         }
       `;
     switch (color) {
-      case 'client':
+      case 'primary':
         return css`
-          color: ${theme.colors.client.main};
+          color: ${theme.colors.primary.main};
 
           a {
-            color: ${theme.colors.client.main};
+            color: ${theme.colors.primary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.client.main};
+            stroke: ${theme.colors.primary.main};
           }
 
           a:visited {
-            color: ${theme.colors.client.main};
+            color: ${theme.colors.primary.main};
           }
         `;
-      case 'productOwner':
+      case 'secondary':
         return css`
-          color: ${theme.colors.productOwner.main};
+          color: ${theme.colors.secondary.main};
 
           a {
-            color: ${theme.colors.productOwner.main};
+            color: ${theme.colors.secondary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.productOwner.main};
+            stroke: ${theme.colors.secondary.main};
           }
 
           a:visited {
-            color: ${theme.colors.productOwner.main};
+            color: ${theme.colors.secondary.main};
           }
         `;
-      case 'developer':
+      case 'tertiary':
         return css`
-          color: ${theme.colors.developer.main};
+          color: ${theme.colors.tertiary.main};
 
           a {
-            color: ${theme.colors.developer.main};
+            color: ${theme.colors.tertiary.main};
           }
 
           .icon svg path {
-            stroke: ${theme.colors.developer.main};
+            stroke: ${theme.colors.tertiary.main};
           }
 
           a:visited {
-            color: ${theme.colors.developer.main};
-          }
-        `;
-      case 'admin':
-        return css`
-          color: ${theme.colors.admin.main};
-
-          a {
-            color: ${theme.colors.admin.main};
-          }
-
-          .icon svg path {
-            stroke: ${theme.colors.admin.main};
-          }
-
-          a:visited {
-            color: ${theme.colors.admin.main};
+            color: ${theme.colors.tertiary.main};
           }
         `;
       case 'success':

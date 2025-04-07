@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['!autodocs'],
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin', 'error'] },
+    color: { options: ['primay', 'secondary', 'tertiary', 'error'] },
   },
 } satisfies Meta<typeof Spinner>;
 
@@ -20,6 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'client',
+		color: 'primary',
   },
 };

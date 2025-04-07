@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -26,21 +25,17 @@ export const Wrapper = styled.p<WrapperProps>`
         color: inherit;
       `;
     switch (color) {
-      case 'client':
+      case 'primary':
         return css`
-          color: ${theme.colors.client.main};
+          color: ${theme.colors.primary.main};
         `;
-      case 'productOwner':
+      case 'secondary':
         return css`
-          color: ${theme.colors.productOwner.main};
+          color: ${theme.colors.secondary.main};
         `;
-      case 'developer':
+      case 'tertiary':
         return css`
-          color: ${theme.colors.developer.main};
-        `;
-      case 'admin':
-        return css`
-          color: ${theme.colors.admin.main};
+          color: ${theme.colors.tertiary.main};
         `;
       case 'success':
         return css`

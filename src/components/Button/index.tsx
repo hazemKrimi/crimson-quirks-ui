@@ -3,7 +3,7 @@ import Spinner from '../Spinner';
 import { Wrapper } from './styles';
 
 export type ButtonProps = {
-  color: 'client' | 'productOwner' | 'developer' | 'admin' | 'error';
+  color: 'primary' | 'secondary' | 'tertiary' | 'error';
   size?: 'small' | 'big';
   variant?: 'primary-action' | 'secondary-action' | 'outlined' | 'text';
   type?: 'submit' | 'button' | 'reset';

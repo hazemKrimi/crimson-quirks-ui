@@ -5,10 +5,9 @@ import Text from '../Text';
 export type ChipProps = {
   variant?: 'outlined' | 'filled';
   color:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error';

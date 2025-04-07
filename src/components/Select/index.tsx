@@ -5,10 +5,9 @@ import Text from '../Text';
 export type SelectProps = {
   className?: string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -27,7 +26,7 @@ export type SelectProps = {
 };
 
 const Select = ({
-  color = 'client',
+  color = 'primary',
   label,
   name,
   value,

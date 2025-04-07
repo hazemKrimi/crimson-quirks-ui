@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['!autodocs'],
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin', 'error'] },
+    color: { options: ['primary', 'secondary', 'tertiary', 'error'] },
     variant: { options: ['display', 'headline', 'title', 'subheader', 'body', 'caption'] },
     weight: { options: ['initial', 'normal', 'bold'] },
   },
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'developer',
+		color: 'tertiary',
 		children: 'Text',
   },
 };

@@ -9,7 +9,7 @@ const meta = {
     layout: 'centered',
   },
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin', 'error'] },
+    color: { options: ['primary', 'secondary', 'tertiary', 'error'] },
     text: { control: 'text' },
   },
 } satisfies Meta<typeof Button>;
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'admin',
+		color: 'secondary',
 		text: 'Hello, World!',
 		variant: 'primary-action'
   },

@@ -20,7 +20,7 @@ export const Example: Story = {
   render: () => {
     return (
       <IconButton
-        color='admin'
+        color='secondary'
         icon={<Add />}
         size='medium'
         onClick={() => window.alert('Hello, World!')}

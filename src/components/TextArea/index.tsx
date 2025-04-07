@@ -5,10 +5,9 @@ import Text from '../Text';
 export type TextAreaProps = {
   className?: string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -26,7 +25,7 @@ export type TextAreaProps = {
 };
 
 const TextArea = ({
-  color = 'client',
+  color = 'primary',
   label,
   name,
   placeholder,

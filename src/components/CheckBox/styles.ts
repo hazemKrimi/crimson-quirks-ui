@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 type WrapperProps = {
-  color?: 'client' | 'productOwner' | 'developer' | 'admin';
+  color?: 'primary' | 'secondary' | 'tertiary';
   checked: boolean;
 };
 
@@ -26,49 +26,18 @@ export const Wrapper = styled.div<WrapperProps>`
   }
 
   ${({ checked, color, theme }) => {
-    if (!checked)
+    if (!checked || !color)
       return css`
         .checkbox {
           border: 2px solid ${theme.colors.black.main};
           background: ${theme.colors.white.main};
         }
       `;
-    switch (color) {
-      case 'client':
-        return css`
-          .checkbox {
-            border: none;
-            background: ${theme.colors.client.main};
-          }
-        `;
-      case 'productOwner':
-        return css`
-          .checkbox {
-            border: none;
-            background: ${theme.colors.productOwner.main};
-          }
-        `;
-      case 'developer':
-        return css`
-          .checkbox {
-            border: none;
-            background: ${theme.colors.developer.main};
-          }
-        `;
-      case 'admin':
-        return css`
-          .checkbox {
-            border: none;
-            background: ${theme.colors.admin.main};
-          }
-        `;
-      default:
-        return css`
-          .checkbox {
-            border: none;
-            background: ${theme.colors.client.main};
-          }
-        `;
-    }
+    return css`
+			.checkbox {
+				border: none;
+				background: ${theme.colors[color].main};
+			}
+		`;
   }}
 `;

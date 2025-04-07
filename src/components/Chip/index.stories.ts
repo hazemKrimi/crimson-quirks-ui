@@ -9,7 +9,7 @@ const meta = {
     layout: 'centered',
   },
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin'] },
+    color: { options: ['primary', 'secondary', 'tertiary'] },
     text: { control: 'text' },
     variant: { options: ['outlined', 'filled'] },
   },
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'admin',
+		color: 'tertiary',
 		text: 'Hello, World!',
 		variant: 'filled'
   },

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 type WrapperProps = {
-  color?: 'client' | 'productOwner' | 'developer' | 'admin';
+  color?: 'primary' | 'secondary' | 'tertiary';
   size?: 'small' | 'medium' | 'big';
   icon?: React.FunctionComponentElement<React.SVGProps<SVGSVGElement>>;
 };

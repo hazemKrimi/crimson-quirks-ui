@@ -3,10 +3,9 @@ import { Wrapper } from './styles';
 export type AlertProps = {
   className?: string;
   color:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error';

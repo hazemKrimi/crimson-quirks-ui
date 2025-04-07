@@ -8,7 +8,7 @@ import Text from '../Text';
 import { Wrapper } from './styles';
 
 export type ModalProps = {
-  color: 'client' | 'productOwner' | 'developer' | 'admin';
+  color: 'primary' | 'secondary' | 'tertiary';
   title: string;
   description: string;
   children?: React.ReactNode | JSX.Element | string;

@@ -6,10 +6,9 @@ import { Wrapper } from './styles';
 export type InputProps = {
   className?: string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -31,7 +30,7 @@ export type InputProps = {
 const Input = ({
   type = 'text',
   file = false,
-  color = 'client',
+  color = 'primary',
   label,
   name,
   placeholder,

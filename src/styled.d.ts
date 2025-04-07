@@ -38,22 +38,17 @@ declare module 'styled-components' {
         light: string;
         dark: string;
       };
-      client: {
+      primary: {
         main: string;
         light: string;
         dark: string;
       };
-      productOwner: {
+      secondary: {
         main: string;
         light: string;
         dark: string;
       };
-      developer: {
-        main: string;
-        light: string;
-        dark: string;
-      };
-      admin: {
+      tertiary: {
         main: string;
         light: string;
         dark: string;

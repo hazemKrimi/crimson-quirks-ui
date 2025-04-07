@@ -6,10 +6,9 @@ export type LinkProps = {
   url?: boolean;
   children?: React.ReactNode | JSX.Element | string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'

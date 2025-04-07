@@ -9,7 +9,7 @@ const meta = {
     layout: 'centered',
   },
   argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin'] },
+    color: { options: ['primary', 'secondary', 'tertiary'] },
   },
 } satisfies Meta<typeof Input>;
 
@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'developer',
+		color: 'tertiary',
 		onChange: () => {}
   },
 };

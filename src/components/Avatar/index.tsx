@@ -2,7 +2,7 @@ import { Wrapper } from './styles';
 
 export type AvatarProps = {
   className?: string;
-  color?: 'client' | 'productOwner' | 'developer' | 'admin' | string;
+  color?: 'primary' | 'secondary' | 'tertiary' | string;
   size?: 'small' | 'big';
   text: string;
 };

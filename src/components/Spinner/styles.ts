@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'white'
     | 'black'
     | 'gray';
@@ -38,12 +37,12 @@ export const Wrapper = styled.div<WrapperProps>`
     border-radius: 50%;
     border: 6px solid
       ${({ theme, color }) =>
-        color ? theme.colors[color].main : theme.colors.client.main};
+        color ? theme.colors[color].main : theme.colors.primary.main};
     border-color: ${({ theme, color }) =>
-        color ? theme.colors[color].main : theme.colors.client.main}
+        color ? theme.colors[color].main : theme.colors.primary.main}
       transparent
       ${({ theme, color }) =>
-        color ? theme.colors[color].main : theme.colors.client.main}
+        color ? theme.colors[color].main : theme.colors.primary.main}
       transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }

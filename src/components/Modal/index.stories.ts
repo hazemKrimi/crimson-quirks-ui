@@ -9,7 +9,7 @@ const meta = {
     layout: 'centered',
   },
 	argTypes: {
-    color: { options: ['client', 'productOwner', 'developer', 'admin', 'error'] },
+    color: { options: ['primary', 'secondary', 'tertiary', 'error'] },
     title: { control: 'text' },
     description: { control: 'text' },
   },
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
-		color: 'productOwner',
+		color: 'secondary',
 		title: 'Modal',
 		description: 'This is a modal!',
 		onConfirm: () => {},

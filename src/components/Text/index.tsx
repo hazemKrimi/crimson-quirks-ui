@@ -5,10 +5,9 @@ export type TextProps = {
   className?: string;
   variant?: 'display' | 'headline' | 'title' | 'subheader' | 'body' | 'caption';
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'

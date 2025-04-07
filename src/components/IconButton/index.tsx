@@ -1,7 +1,7 @@
 import { Wrapper } from './styles';
 
 export type IconButtonProps = {
-  color?: 'client' | 'productOwner' | 'developer' | 'admin';
+  color?: 'primary' | 'secondary' | 'tertiary';
   size?: 'small' | 'medium' | 'big';
   icon?: React.ReactNode;
   onClick: () => void;

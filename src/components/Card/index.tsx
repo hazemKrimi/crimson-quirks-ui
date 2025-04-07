@@ -9,7 +9,7 @@ export type CardProps = {
   selectable?: boolean;
   selected?: boolean;
   toggleSelect?: () => void;
-  color: 'client' | 'productOwner' | 'developer' | 'admin';
+  color: 'primary' | 'secondary' | 'tertiary';
 };
 
 const Card = ({

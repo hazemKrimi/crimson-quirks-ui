@@ -10,7 +10,7 @@ const meta = {
   },
   argTypes: {
     text: { control: 'text' },
-    color: { options: ['client', 'productOwner', 'developer', 'admin'] },
+    color: { options: ['primary', 'secondary', 'tertiary'] },
     size: { options: ['big', 'small'] },
   },
 } satisfies Meta<typeof Avatar>;
@@ -22,6 +22,6 @@ type Story = StoryObj<typeof meta>;
 export const Example: Story = {
   args: {
     text: 'A',
-		color: 'admin'
+		color: 'tertiary'
   },
 };

@@ -2,10 +2,9 @@ import styled, { css } from 'styled-components';
 
 type WrapperProps = {
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
@@ -31,7 +30,7 @@ export const Wrapper = styled.div<WrapperProps>`
       ${({ deletable, color, theme }) =>
         deletable &&
         css`
-          border: 2px solid ${theme.colors[color || 'client'].main};
+          border: 2px solid ${theme.colors[color || 'primary'].main};
         `}
 
       .close {
@@ -40,7 +39,7 @@ export const Wrapper = styled.div<WrapperProps>`
     }
 
     .close {
-      background: ${({ color, theme }) => theme.colors[color || 'client'].main};
+      background: ${({ color, theme }) => theme.colors[color || 'primary'].main};
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -67,7 +66,7 @@ export const Wrapper = styled.div<WrapperProps>`
     padding: 150px 30px;
     position: relative;
     border: 2px solid
-      ${({ color, theme }) => theme.colors[color || 'client'].main};
+      ${({ color, theme }) => theme.colors[color || 'primary'].main};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +91,7 @@ export const Wrapper = styled.div<WrapperProps>`
       height: 25px;
 
       path {
-        stroke: ${({ color, theme }) => theme.colors[color || 'client'].main};
+        stroke: ${({ color, theme }) => theme.colors[color || 'primary'].main};
       }
     }
   }

@@ -4,10 +4,9 @@ import { Upload, Close } from '../../assets';
 export type ImagePreviewProps = {
   className?: string;
   color?:
-    | 'client'
-    | 'productOwner'
-    | 'developer'
-    | 'admin'
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
     | 'success'
     | 'warning'
     | 'error'
